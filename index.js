@@ -29,6 +29,7 @@ client.on('message', (message) =>{
 	if (message.content == '!corchojordi') {
 		corcho++;
 		var msg = 'Jordi has tenido corchillo ' +corcho+ 'veces';
+		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!aiuda') {
 		var msg = "```";
