@@ -1,7 +1,9 @@
 //console.log('El bot funsiona rejoya');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var corcho;
+
+var corchojordi = 0;
+
 client.on('ready', () => {
 	console.log('tamos redi');
 });
@@ -27,8 +29,8 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!corchojordi') {
-		corcho = corcho+1;
-		var msg = 'Jordi has tenido corchillo ' +corcho+ ' veces';
+		corchojordi++;
+		var msg = 'Jordi has tenido corchillo ' +corchojordi+ ' veces';
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!aiuda') {
