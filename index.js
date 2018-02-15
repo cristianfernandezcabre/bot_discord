@@ -1,4 +1,4 @@
-console.log('El bot funsiona rejoya');
+//console.log('El bot funsiona rejoya');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -34,4 +34,4 @@ bot.on('message', (message) =>{
 		message.channel.sendMessage('/tts :on: :on:');
 	}
 });
-bot.login('NDEzNDUzNjY2ODg4OTc0MzQ2.DWZCyA.fHclkcFHrpeLRhyRl-E6gIRPJNQ');
+bot.login('process.env.BOT_TOKEN');
