@@ -1,8 +1,12 @@
 //console.log('El bot funsiona rejoya');
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
-bot.on('message', (message) =>{
+client.on('ready', () => {
+	console.log('tamos redi');
+});
+
+client.on('message', (message) =>{
 	if (message.content == '!jordi') {
 		var rand = Math.round(Math.random()*(1));
 		var msg;
@@ -34,4 +38,4 @@ bot.on('message', (message) =>{
 		message.channel.sendMessage('/tts :on: :on:');
 	}
 });
-bot.login('process.env.BOT_TOKEN');
+client.login(process.env.BOT_TOKEN);
