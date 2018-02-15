@@ -4,7 +4,6 @@
   "description": "que es el jordi?",
   "main": "index.js",
   "scripts": {
-    //"test": "echo \"Error: no test specified\" && exit 1"
     "start": "node index.js"
   },
   "author": "Paco el defenestrao",
