@@ -30,7 +30,11 @@ client.on('message', (message) =>{
 		var msg = "```";
 		msg += "!jordi --> Indica que es o que tiene el susodicho \n";
 		msg += "!ruben --> Demuestra su amor por las cajas con bahia cd/dvd \n";
-		msg += "!braulio --> Que no es un comando, que es BRAAAAAULIO";
+		msg += "!braulio --> Que no es un comando, que es BRAAAAAULIO \n";
+		msg += "!corchoraul --> Contador de veces que @WakingShadows#2256 ha tenido corchillo en la cabeza \n";
+		msg += "!corchojordi --> Contador de veces que @Gladers#2375 ha tenido corchillo en la cabeza \n";
+		msg += "!corchoruben --> Contador de veces que @DJMendieta#5407 ha tenido corchillo en la cabeza \n";
+		msg += "!corchocristian --> Contador de veces que @cristiann_96#3954 ha tenido corchillo en la cabeza \n";
 		msg += "```";
 		message.channel.sendMessage(msg);
 	}
