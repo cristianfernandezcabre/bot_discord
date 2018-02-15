@@ -34,8 +34,5 @@ client.on('message', (message) =>{
 		msg += "```";
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!tts') {
-		message.channel.sendMessage('/tts :on: :on:');
-	}
 });
 client.login(process.env.BOT_TOKEN);
