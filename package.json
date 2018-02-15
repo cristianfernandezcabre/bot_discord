@@ -1,0 +1,14 @@
+{
+  "name": "jordibot",
+  "version": "1.0.0",
+  "description": "que es el jordi?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paco el defenestrao",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
