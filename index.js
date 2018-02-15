@@ -27,8 +27,8 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!corchojordi') {
-		corcho++;
-		var msg = 'Jordi has tenido corchillo ' +corcho+ 'veces';
+		corcho = corcho+1;
+		var msg = 'Jordi has tenido corchillo ' +corcho+ ' veces';
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!aiuda') {
