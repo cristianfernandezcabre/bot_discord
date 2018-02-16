@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const fs = require('fs');
 
 var corchojordi = 0;
 var corchoruben = 0;
@@ -56,6 +57,11 @@ client.on('message', (message) =>{
 		msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces \n';
 		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces \n';
 		message.channel.sendMessage(msg);
+	}
+	if (message.content == '!prueba') {
+		let rawdata = fs.readFileSync('points.json');  
+		let corchillos = JSON.parse(rawdata);  
+		message.channel.sendMessage(corchillos);
 	}
 	if (message.content == '!aiuda') {
 		var msg = "```";
