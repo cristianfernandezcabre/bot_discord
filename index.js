@@ -58,11 +58,11 @@ client.on('message', (message) =>{
 		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces \n';
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!prueba') {
+	/*if (message.content == '!prueba') {
 		let rawdata = fs.readFileSync('points.json');  
 		let corchillos = JSON.parse(rawdata);  
 		message.channel.sendMessage(corchillos);
-	}
+	}*/
 	if (message.content == '!aiuda') {
 		var msg = "```";
 		msg += "!jordi --> Indica que es o que tiene el susodicho \n";
