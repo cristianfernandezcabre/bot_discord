@@ -1,4 +1,3 @@
-//console.log('El bot funsiona rejoya');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -51,13 +50,13 @@ client.on('message', (message) =>{
 		var msg = 'Es eso cerebro en la cabeza del raul??? NO, ES BRAAA...CORCHILLO OTRA VEZ EN CONCRETO' +corchoraul+ ' VECES';
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!corchos') {
+	/*if (message.content == '!corchos') {
 		var msg = 'Jordi has tenido corchillo ' +corchojordi+ ' veces';
 		var msg += 'Raul has tenido corchillo ' +corchoraul+ ' veces';
 		var msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces';
 		var msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces';
 		message.channel.sendMessage(msg);
-	}
+	}*/
 	if (message.content == '!aiuda') {
 		var msg = "```";
 		msg += "!jordi --> Indica que es o que tiene el susodicho \n";
