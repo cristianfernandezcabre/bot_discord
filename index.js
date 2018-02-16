@@ -11,31 +11,7 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) =>{
-	if (!message.content.startsWith(prefix)) return;
-	  if (message.author.bot) return;
-
-	  if (!points[message.author.id]) points[message.author.id] = {
-	    points: 0,
-	    level: 0
-	  };
-	  let userData = points[message.author.id];
-	  userData.points++;
-
-	  let curLevel = Math.floor(0.1 * Math.sqrt(userData.points));
-	  if (curLevel > userData.level) {
-	    // Level up!
-	    userData.level = curLevel;
-	    message.reply(`You"ve leveled up to level **${curLevel}**! Ain"t that dandy?`);
-	  }
-
-	  if (message.content.startsWith(prefix + "level")) {
-	    message.reply(`You are currently level ${userData.level}, with ${userData.points} points.`);
-	  }
-	  fs.writeFile("./points.json", JSON.stringify(points), (err) => {
-	    if (err) console.error(err)
-	  });
-	
-	/*if (message.content == '!jordi') {
+	if (message.content == '!jordi') {
 		var rand = Math.round(Math.random()*(1));
 		var msg;
 		switch(rand){
@@ -81,7 +57,7 @@ client.on('message', (message) =>{
 		var msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces';
 		message.channel.sendMessage(msg);
 	}*/
-	/*if (message.content == '!aiuda') {
+	if (message.content == '!aiuda') {
 		var msg = "```";
 		msg += "!jordi --> Indica que es o que tiene el susodicho \n";
 		msg += "!ruben --> Demuestra su amor por las cajas con bahia cd/dvd \n";
@@ -92,6 +68,6 @@ client.on('message', (message) =>{
 		msg += "!corchocristian --> Contador de veces que @cristiann_96#3954 ha tenido corchillo en la cabeza \n";
 		msg += "```";
 		message.channel.sendMessage(msg);
-	}*/
+	}
 });
 client.login(process.env.BOT_TOKEN);
