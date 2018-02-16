@@ -51,10 +51,10 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!corchos') {
-		var msg = 'Jordi has tenido corchillo ' +corchojordi+ ' veces';
-		msg += 'Raul has tenido corchillo ' +corchoraul+ ' veces';
-		msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces';
-		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces';
+		var msg = 'Jordi has tenido corchillo ' +corchojordi+ ' veces \n';
+		msg += 'Raul has tenido corchillo ' +corchoraul+ ' veces \n';
+		msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces \n';
+		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces \n';
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!aiuda') {
