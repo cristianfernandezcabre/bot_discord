@@ -31,22 +31,22 @@ client.on('message', (message) =>{
 		var msg = "Pam pam!!!!! estaba yo ayer ahiii to locooo por la calle dando un paseo ahi to desfasao, y de repente viene una pava y me dices tienes un cigarro y le digoooo un puro habano pa tu boca putaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaa, y se lo tomo a mal, y se lo dijo a un polisia que habia ahi al laooo y el tio me viene y me diseeeee la violamos entre los dos loco loco locooooooooooo y yo joderrrrrrr, que tiene 15 añossss jajajajaa pero al final no era un polisia, era Braulio. Ahsadishaudhusahuhuahua puto Braulio. Me fui con el de cañas y al final estuvimos ahi to locos tomando mdma hasta que vino una señora y nos dijo payoooos que eso es to malo tomar de esto que es mucho mejor, y nos dio una sopica de ajo to rica jajajajaajahauuahauajaj puta vieja, nos robo la droja y se fue con sus amigas al bingo a ponerse to morá jashajaj. Arriquitaun taun taun!!!!"
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!+corchojordi') {
+	if (message.content == '!corchojordi') {
 		corchojordi++;
 		var msg = 'Joder Jordi ya la has vuelto a liar, ya has tenido corchillo ' +corchojordi+ ' veces';
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!+corchocristian') {
+	if (message.content == '!corchocristian') {
 		corchocristian++;
 		var msg = 'Me cago en dios quien me mandaba hacer esto, si es que ya me lo dicen Cristian tienes corchillo en la cabesa y la has cagao otra vez ahora tienes corchillo en la cabeza ' +corchocristian+ ' veces';
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!+corchoruben') {
+	if (message.content == '!corchoruben') {
 		corchoruben++;
 		var msg = 'Hostia puta Ruben de ' +corchoruben+ ' veces que has tenido corcho en la cabeza te has vuelto un petao';
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!+corchoraul') {
+	if (message.content == '!corchoraul') {
 		corchoraul++;
 		var msg = 'Es eso cerebro en la cabeza del raul??? NO, ES BRAAA...CORCHILLO OTRA VEZ EN CONCRETO' +corchoraul+ ' VECES';
 		message.channel.sendMessage(msg);
