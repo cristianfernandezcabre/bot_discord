@@ -52,9 +52,9 @@ client.on('message', (message) =>{
 	}
 	if (message.content == '!corchos') {
 		var msg = 'Jordi has tenido corchillo ' +corchojordi+ ' veces';
-		var msg += 'Raul has tenido corchillo ' +corchoraul+ ' veces';
-		var msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces';
-		var msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces';
+		msg += 'Raul has tenido corchillo ' +corchoraul+ ' veces';
+		msg += 'Ruben has tenido corchillo ' +corchoruben+ ' veces';
+		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces';
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!aiuda') {
