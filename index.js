@@ -95,8 +95,8 @@ client.on('message', (message) =>{
 	}*/
 	if (message.content == '!mochila') {
 		var msg = "De que mochila me hablas? :monkaS: \n";
-		msg += "1 --> No lo se \n";
-		msg += "2-->Ya sabes, huele como a dulce \n";
+		msg += "zorra --> No lo se \n";
+		msg += "puta-->Ya sabes, huele como a dulce \n";
 		message.channel.sendMessage(msg);
 		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
 		collector.on('message', (message) => {
