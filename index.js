@@ -81,5 +81,9 @@ client.on('message', (message) =>{
 		msg += "```";
 		message.channel.sendMessage(msg);
 	}
+	if (message.content == '!shrug') {
+		var msg = "¯\_(ツ)_/¯";
+		message.channel.sendMessage(msg);
+	}
 });
 client.login(process.env.BOT_TOKEN);
