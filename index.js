@@ -98,18 +98,23 @@ client.on('message', (message) =>{
 		msg += "1 --> No lo se \n";
 		msg += "2-->Ya sabes, huele como a dulce \n";
 		message.channel.sendMessage(msg);
-		switch(message.content){
+		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+		collector.on('collect', message => {
+			switch(message.content){
 			case 1:
 				msg = 'Entonces no preguntes';
+				message.channel.sendMessage(msg);
 				break;
 			case 2:
 				msg = 'Me da a mi que eso no era ni uva ni posiblemente dulce :thinking:';
+				message.channel.sendMessage(msg);
 				break;
 			default:
 				msg = 'Si no me vas a contestar pa que coño me dices nada puto tonto';
+				message.channel.sendMessage(msg);
 				break;
 		}
-		message.channel.sendMessage(msg);
+		})
 	}
 });
 client.login(process.env.BOT_TOKEN);
