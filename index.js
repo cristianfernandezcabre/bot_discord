@@ -99,7 +99,7 @@ client.on('message', (message) =>{
 		msg += "2-->Ya sabes, huele como a dulce \n";
 		message.channel.sendMessage(msg);
 		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
-		collector.on('message', message => {
+		collector.on('message', (message) => {
 			if (message.content === 1){
 				msg = "Mejor no lo sepas, es por tu bien";
 				message.channel.sendMessage(msg);
