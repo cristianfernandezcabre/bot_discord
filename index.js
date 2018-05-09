@@ -95,7 +95,8 @@ client.on('message', (message) =>{
 	}*/
 	if (message.content == '!mochila') {
 		var msg = "De que mochila me hablas? :monkaS: /n";
-		msg += "1 --> No lo se /n 2-->Ya sabes, huele como a dulce
+		msg += "1 --> No lo se /n";
+		msg += "2-->Ya sabes, huele como a dulce /n";
 		message.channel.sendMessage(msg);
 		switch(message.content){
 			case 1:
