@@ -99,21 +99,22 @@ client.on('message', (message) =>{
 		msg += "2-->Ya sabes, huele como a dulce \n";
 		message.channel.sendMessage(msg);
 		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
-		collector.on('collect', message => {
-			switch(message.content){
-			case 1:
-				msg = 'Entonces no preguntes';
+		collector.on('message', message => {
+			if (message.content === 1){
+				msg = "Mejor no lo sepas, es por tu bien";
 				message.channel.sendMessage(msg);
-				break;
-			case 2:
-				msg = 'Me da a mi que eso no era ni uva ni posiblemente dulce :thinking:';
+				return;
+			}
+			else if (message.content === 2){
+				msg = "Eso ni era dulce, ni era uva, mejor no lo sepas";
 				message.channel.sendMessage(msg);
-				break;
-			default:
-				msg = 'Si no me vas a contestar pa que coño me dices nada puto tonto';
+				return;
+			}
+			else {
+				msg = "Como no me contestes me voy a quedar clavao un ratejo";
 				message.channel.sendMessage(msg);
-				break;
-		}
+			}
+				
 		})
 	}
 });
