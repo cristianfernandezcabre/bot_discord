@@ -85,12 +85,29 @@ client.on('message', (message) =>{
 		var msg = "¯\_(ツ)_/¯";
 		message.channel.sendMessage(msg);
 	}
-	if (message.content == '!conn') {
+	/*if (message.content == '!conn') {
 		var msg = "Dime algo va: /n";
 		for (user of Bot.users){
 			
 			msg += user[1].username;
 		}  
+		message.channel.sendMessage(msg);
+	}*/
+	if (message.content == '!mochila') {
+		var msg = "De que mochila me hablas? :monkaS: /n";
+		msg += "1 --> No lo se /n 2-->Ya sabes, huele como a dulce
+		message.channel.sendMessage(msg);
+		switch(message.content){
+			case 1:
+				msg = 'Entonces no preguntes';
+				break;
+			case 2:
+				msg = 'Me da a mi que eso no era ni uva ni posiblemente dulce :thinking:';
+				break;
+			default:
+				msg = 'Si no me vas a contestar pa que coño me dices nada puto tonto';
+				break;
+		}
 		message.channel.sendMessage(msg);
 	}
 });
