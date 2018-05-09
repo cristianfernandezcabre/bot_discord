@@ -85,5 +85,10 @@ client.on('message', (message) =>{
 		var msg = "¯\_(ツ)_/¯";
 		message.channel.sendMessage(msg);
 	}
+	if (message.content == '!conn') {
+		for (user of Bot.users){
+			message.channel.sendMessage(user[1].username);
+		}       
+	}
 });
 client.login(process.env.BOT_TOKEN);
