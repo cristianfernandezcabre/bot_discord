@@ -59,8 +59,10 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!rollos'){
-		let braulio = message.server.members.get('name', 'Braulio');
-		message.channel.sendMessage(`${braulio} que mierdas hago con los rollos enanos estos de los cojones`);
+		var braulio = message.server.members.get('name', 'Braulio');
+		braulio = braulio.toString();
+		var msg = 'Oye ' +braulio + ' que coño hago con el puto rollo enano este de los cojones \n';
+		message.channel.sendMessage(msg);
 	}
 	/*if (message.content == '!prueba') {
 		let rawdata = fs.readFileSync('points.json');  
