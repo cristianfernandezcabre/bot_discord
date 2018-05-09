@@ -86,9 +86,12 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 	}
 	if (message.content == '!conn') {
+		var msg = "Dime algo va: /n";
 		for (user of Bot.users){
-			message.channel.sendMessage(user[1].username);
-		}       
+			
+			msg += user[1].username;
+		}  
+		message.channel.sendMessage(msg);
 	}
 });
 client.login(process.env.BOT_TOKEN);
