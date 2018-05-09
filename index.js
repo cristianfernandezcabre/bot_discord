@@ -58,6 +58,10 @@ client.on('message', (message) =>{
 		msg += 'Cristian has tenido corchillo ' +corchocristian+ ' veces \n';
 		message.channel.sendMessage(msg);
 	}
+	if (message.content == '!rollos'){
+		let braulio = message.server.members.get('name', 'Braulio');
+		message.channel.sendMessage(`${braulio} que mierdas hago con los rollos enanos estos de los cojones`);
+	}
 	/*if (message.content == '!prueba') {
 		let rawdata = fs.readFileSync('points.json');  
 		let corchillos = JSON.parse(rawdata);  
