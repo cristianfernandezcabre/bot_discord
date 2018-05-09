@@ -100,12 +100,12 @@ client.on('message', (message) =>{
 		message.channel.sendMessage(msg);
 		const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
 		collector.on('message', (message) => {
-			if (message.content === 1){
+			if (message.content == 'zorra'){
 				msg = "Mejor no lo sepas, es por tu bien";
 				message.channel.sendMessage(msg);
 				return;
 			}
-			else if (message.content === 2){
+			else if (message.content == 'puta'){
 				msg = "Eso ni era dulce, ni era uva, mejor no lo sepas";
 				message.channel.sendMessage(msg);
 				return;
