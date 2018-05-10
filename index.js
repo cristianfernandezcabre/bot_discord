@@ -24,11 +24,11 @@ client.on('message', (message) =>{
 		}
 		message.channel.sendMessage(msg);
 	}
-	/*if(message.content == '!prueba'){
-		var user = client.users.get("name", "Chadous#2256").id;
-		var msg = "hola " +user;
+	if(message.content == '!prueba'){
+		var user = client.users.get("name", "Chadous#2256");
+		var msg = "hola " +user.username+user.discriminator;
 		messge.channel.sendMessage(msg);
-	}*/
+	}
 	if (message.content == '!ruben') {
 		message.channel.sendMessage('Hoy follo, mañana condena');
 	}
