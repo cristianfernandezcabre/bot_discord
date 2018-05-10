@@ -24,13 +24,16 @@ client.on('message', (message) =>{
 		}
 		message.channel.sendMessage(msg);
 	}
-	if(message.content == '!prueba'){
+	/*if(message.content == '!prueba'){
 		var user = client.users.get("name", "Chadous#2256");
 		if (user){
 			var msg = "hola " +user.username+user.discriminator;
 		}else{
 			var msg = "falla xdxd";}
 		messge.channel.sendMessage(msg);
+	}*/
+	if (message.content == '!rip') {
+		message.channel.sendMessage('Que no estaba muerto, que estaba de parranda');
 	}
 	if (message.content == '!ruben') {
 		message.channel.sendMessage('Hoy follo, mañana condena');
