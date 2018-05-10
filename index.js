@@ -26,7 +26,10 @@ client.on('message', (message) =>{
 	}
 	if(message.content == '!prueba'){
 		var user = client.users.get("name", "Chadous#2256");
-		var msg = "hola " +user.username+user.discriminator;
+		if (user){
+			var msg = "hola " +user.username+user.discriminator;
+		}else{
+			var msg = "falla xdxd";}
 		messge.channel.sendMessage(msg);
 	}
 	if (message.content == '!ruben') {
